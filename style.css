@@ -16,6 +16,8 @@
   justify-content: space-between;
   background-color: var(--text-color);
   align-items: center;
+  width: 100%;
+  position: fixed;
 }
 .header-brand {
   color: var(--bg-color);
