@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --colorprimary: #bc9667;
+  --colorsecondary: #edeae3;
+  --text-color: #1b1b1b;
+  --bg-color: #fff;
+  --button-color: #8a6f4d;
+  --bg-img-card: #f1f1f1;
+}
+/* Navigasi */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--text-color);
+  align-items: center;
+}
+.header-brand {
+  color: var(--bg-color);
+}
+.header-brand img {
+  width: 80px;
+}
+.header-menu a {
+  color: var(--bg-color);
+  text-decoration: none;
+  font-size: 20px;
+}
+.header-menu {
+  display: flex;
+  gap: 20px;
+}
+/* Halaman Pertama */
+.hero {
+  display: flex;
+  color: var(--button-color);
+  background-image: url(img/bg.png);
+}
+.hero-desc {
+  color: var(--colorsecondary);
+  padding-top: 140px;
+  margin-left: 60px;
+  font-size: 20px;
+}
+.hero-desc h1 {
+  color: var(--colorprimary);
+  font-size: 80px;
+}
+.hero-img {
+  padding-top: 40px;
+}
+button {
+  background-color: var(--button-color);
+  color: var(--colorsecondary);
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+/* Halaman Kedua */
+.ABOUT {
+  background-color: var(--bg-color);
+  display: flex;
+  color: var(--button-color);
+  gap: 10px;
+  margin-top: 20px;
+  padding: 20px 20px;
+}
+.about-desc {
+  color: var(--text-color);
+  font-size: 20px;
+}
+.about-img img {
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+/* Halaman ketiga */
+.product {
+  background-color: var(--bg-color);
+  padding-top: 20px;
+}
+.product-title {
+  text-align: center;
+  padding-top: 20px;
+}
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 30px;
+  background-color: var(--bg-color);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.product-container button:hover {
+  transform: translateY(-5px);
+}
+.product-card {
+  background-color: var(--bg-img-card);
+  width: 300px;
+  padding: 12px;
+  border-radius: 12px;
+}
+.product-card-img {
+  background-color: var(--bg-color);
+  margin: 10px;
+  max-width: 300px;
+  height: 300px;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  align-items: center;
+}
+.product-card-desc {
+  margin-top: 12px;
+}
+.product-card img {
+  width: 100%;
+}
+.product-card-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 40px;
+}
+.product-card-price p {
+  background-color: var(--colorprimary);
+  color: var(--bg-color);
+  font-weight: bold;
+  border-color: var(--bg-color);
+  padding: 7px 12px;
+  border-radius: 6px;
+}
+.product-card-price button {
+  background-color: var(--bg-color);
+  color: var(--button-color);
+  border-color: var(--colorprimary);
+  padding: 7px 12px;
+  border-radius: 6px;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.testimonial {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.stars {
+  color: #ffd700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.author {
+  margin-top: 20px;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.author h3 {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  margin-top: 20px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #007bff;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  /* border-radius: 50%;
+  background-color: #333; */
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+}
+
+/* Responsif untuk perangkat lebih kecil */
+@media (max-width: 768px) {
+  .PRODUCTS {
+    align-items: center; /* Pusatkan produk di layar kecil */
+  }
+
+  .product-container {
+    width: 100%; /* Mengubah lebar menjadi 100% untuk tampilan lebih fleksibel */
+    max-width: 300px; /* Batasi lebar maksimum */
+  }
+}
